@@ -33,8 +33,8 @@ class Kalkulator:
 
 I then run the code above using each lint like above after done installing them:
 1. Pycodestyle
-```
-pycodestyle calculator.py
-```
-The Output:<br>
-![Alt text](readme_image/10_1_pep8StyleGuide/pycodestyle_lint.png)
+    ```
+    pycodestyle calculator.py
+    ```
+    The Output:<br>
+    ![Alt text](readme_image/10_1_pep8StyleGuide/pycodestyle_lint.png)
