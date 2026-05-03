@@ -38,3 +38,17 @@ I then run the code above using each lint like above after done installing them:
     ```
     The Output:<br>
     ![Alt text](readme_image/10_1_pep8StyleGuide/pycodestyle_lint.png)
+
+2. Pylint
+    ```
+    pylint calculator.py
+    ```
+    The Output:<br>
+    ![Alt text](readme_image/10_1_pep8StyleGuide/pylint_lint.png)
+
+3. Flake8
+    ```
+    flake8 calculator.py
+    ```
+    The Output:<br>
+    ![Alt text](readme_image/10_1_pep8StyleGuide/flake8_lint.png)
