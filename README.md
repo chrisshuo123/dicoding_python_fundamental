@@ -37,18 +37,55 @@ I then run the code above using each lint like above after done installing them:
     pycodestyle calculator.py
     ```
     The Output:<br>
-    ![Alt text](readme_image/10_1_pep8StyleGuide/pycodestyle_lint.png)
+    ![Alt text](readme_image/10_1_pep8StyleGuide/pycodestyle_lint_error.png)
 
 2. Pylint
     ```
     pylint calculator.py
     ```
     The Output:<br>
-    ![Alt text](readme_image/10_1_pep8StyleGuide/pylint_lint.png)
+    ![Alt text](readme_image/10_1_pep8StyleGuide/pylint_lint_error.png)
 
 3. Flake8
     ```
     flake8 calculator.py
     ```
     The Output:<br>
-    ![Alt text](readme_image/10_1_pep8StyleGuide/flake8_lint.png)
+    ![Alt text](readme_image/10_1_pep8StyleGuide/flake8_lint_error.png)
+
+From each results above, it does show different error notifications between each lints used.  The errors specified are all the same, which shows indentation error in line 7.<br>
+<br>
+
+**The Correct Version of calculator.py Code**<br>
+Here's the corrected version of calculator.py after adjust the line 7 with the correct indentation:
+```
+class kalkulator:
+    """kalkulator tambah kurang"""
+    def __init__(self, _i):
+        self.i = _i
+    def tambah(self, _i): return self.i + _i
+    def kurang(self, _i):
+        return self.i - _i
+```
+The result of each Lints:
+1. Pycodestyle
+    ```
+    pycodestyle calculator.py
+    ```
+    The Output: No Errors
+2. Flake8
+    ```
+    flake8 calculator.py
+    ```
+    The Output: No Errors
+3. Pylint
+    ```
+    pylint calculator.py
+    ```
+    Result: Shows a docs error<br>
+    ![Alt text](readme_image/10_1_pep8StyleGuide/pylint_lint.png)
+<br>
+For Point no 1 and 2, when we run the pycodestyle and flake8, it returns no error:<br>
+![Alt text](readme_image/10_1_pep8StyleGuide/flake8_pycodestyle_lint.png)
+<br>
+But on Point no 3 when we run the Pylint, it returns the docs error due to because Pylint requires the developers to specify docstrings documentations between each functions (def in python).  But that's actually fine, does not shows the real technical errors in our programs, just to makesure that our code becomes more perfect in the future.
