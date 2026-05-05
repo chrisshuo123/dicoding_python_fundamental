@@ -2,7 +2,7 @@
 
 This document is to show my growth mindset process in any programming language I've learned, including Python Fundamentals for this repository.  Eventhough the documentation is not neat and ad hoc due to intense learning process juggling between learning other programming language, reading novels of Manual Docs, and doing some real projects, so I documented my learning here as I possibly could.
 
-### Learning 1: Pengecekan Style Guide PEP8
+### Learning 1: Checking PEP8 Style Guide
 **Branch: 10_1_pep8StyleGuide**<br>
 In this learning process, I've been introduced with 3 lints, which are pycodestyle, pylint, and flake8.  In this learning process, I've been asked to install 3 of them:
 1. Pycodestyle _(before was PEP8)_
@@ -89,3 +89,88 @@ For Point no 1 and 2, when we run the pycodestyle and flake8, it returns no erro
 ![Alt text](readme_image/10_1_pep8StyleGuide/flake8_pycodestyle_lint.png)
 <br>
 But on Point no 3 when we run the Pylint, it returns the docs error due to because Pylint requires the developers to specify docstrings documentations between each functions (def in python).  But that's actually fine, does not shows the real technical errors in our programs, just to makesure that our code becomes more perfect in the future.
+
+### Learning 2: Code Formatting
+**Branch: 10_2_codeFormatting**<br>
+In this learning process, I've been introduced with another 3 application types that are used to format code, which are black, YAPF, and autopep8.  In this learning process, I've been asked to install 3 of them _(but take note, maybe I'll only use one of them)_:
+1. Black
+    OS Project, developed by Python Software Foundation (PSF) under the MIT license.<br>
+    Type this bash to install Black via the cmd or github vscode terminal:
+    ```
+    pip install black
+    ```
+2. YAPF _(Yet Another Python Formatter)_
+    An OS Project developed under Google with Apache License:
+    ```
+    pip install yapf
+    ```
+3. autopep8
+    An Open Source (OS) project under the MIT license that uses to format code with the help of lint pycodestyle:
+    ```
+    pip install autopep8
+    ```
+For the Code, we're using our previous calculator.py like in the previous chapter on 'Learning 1: Checking PEP8 Style Guide':
+```
+class Kalkulator:
+    """kalkulator tambah kurang"""
+    def __init__(self, _i):
+        self.i = _i
+    def tambah(self, _i): return self.i + _i
+    def kurang(self, _i):
+        return self.i - _i
+```
+It consists of 2 methods (consists of tambah _'add'_ and kurang _'minus'_) and an atribute object.<br>
+Now, let's try to run the file using the applications we've installed above:<br>
+_Open the terminal, type this each and see the result from each command:_
+1. black
+    ```
+    black calculator.py
+    ```
+    The Output: Automatically beautify the code<br>
+    ![Alt text](readme_image/10_2_codeFormatting/black_reformatting.png)
+    ```
+    class Calculator:
+    """kalkulator tambah kurang"""
+
+    def __init__(self, _i):
+        self.i = _i
+
+    def tambah(self, _i):
+        return self.i + _i
+
+    def kurang(self, _i):
+        return self.i - _i
+
+    ```
+2. yapf
+    ```
+    yapf calculator.py
+    ```
+    The Output: Shows what code needs to be fixed via the Terminal<br>
+    ![Alt text](readme_image/10_2_codeFormatting/yapf_reformatting.png)
+3. autopep8
+    the autopep8 works the same like YAPF and black:
+    - yapf: Gives the code recommendations into the terminal
+        ```
+        autopep8 calculator.py
+        ```
+        The output: Shows what code needs to be fixed via the Terminal<br>
+        ![Alt text](readme_image/10_2_codeFormatting/autopep8_reformatting_1)
+    - black: Directly changes and beautify the codes
+        ```
+        autopep8 --in-place --aggressive --aggressive calculator.py
+        ```
+        The Output: Directly changes the calculator.py codes
+        ```
+        class Kalkulator:
+            """kalkulator tambah kurang"""
+
+            def __init__(self, _i):
+                self.i = _i
+
+            def tambah(self, _i): return self.i + _i
+
+            def kurang(self, _i):
+                return self.i - _i
+        ```
+ 
