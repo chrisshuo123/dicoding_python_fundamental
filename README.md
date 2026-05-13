@@ -255,5 +255,5 @@ Output: Shows an error on self.assertTrue _after change from assertFalse into as
 
 ### Learning 4: Library Matematika
 <b>Branch: </b>12_3_libraryMatematika Branch<br>
-<p>A Python's math library that explain each math's method with examples on how to count the equations according with.  From the docs file on [Python Math Docs](https://docs.python.org/3/library/math.html), the explanations ain't detailed, so I've created a self directory located in '12_3_libraryMatematika/math.ipynb', a python in jupyter format.</p><br>
+<p>A Python's math library that explain each math's method with examples on how to count the equations according with.  From the docs file on [Python Math Docs](https://docs.python.org/3/library/math.html), the explanations ain't detailed, so I've created a self directory located in '12_library/12_3_libraryMatematika/math.ipynb', a python in jupyter format.</p><br>
 <p>From this jupyter notebook, I'm not only explaining how to do it, because through this documentation, I'm also learning each of these python's math libraries.</p>
