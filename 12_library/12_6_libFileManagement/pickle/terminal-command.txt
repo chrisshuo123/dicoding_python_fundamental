@@ -1,0 +1,6 @@
+1. on the keep.py, type this in the vscode terminal:
+    "python keep.py"
+    This will generate a new file called dict.pickle (note: it's unreadable)
+2. To read that, type this in the vscode terminal:
+    "python read.py"
+    This will show the result on the vscode terminal.
