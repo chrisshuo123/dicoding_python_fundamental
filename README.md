@@ -326,3 +326,8 @@ if args.output:
 #### 1. OS
 #### 2. JSON
 #### 3. Pickle
+
+### Learning 8: Library Web Scrapping
+**Branch:** 12_7_libWebScraping<br>
+#### 1. Beautiful Soup
+#### 2. Urllib
