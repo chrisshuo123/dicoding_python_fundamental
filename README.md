@@ -320,3 +320,9 @@ if args.output:
 #### 2. NumPy
 #### 3. Matplotlib
 #### 4. Seaborn
+
+### Learning 7: Library File Management
+**Branch:** 12_6_libFileManagement<br>
+#### 1. OS
+#### 2. JSON
+#### 3. Pickle
