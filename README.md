@@ -314,11 +314,15 @@ if args.output:
     </li>
 </ul>
 
-### Learning 7: Library Web Scrapping
-A library that helps users / devs to gather data from a web page.  This process is called "Web Scrapping" or "Web Crawling".  You can try this functions & methods in this library to extract information from a website and save it on a format that could be access and use for analysis or another apps.<br>
+### Learning 6: Library Data Processing
+**Branch:** 12_5_libPengolahanData<br>
+#### 1. Pandas
+#### 2. NumPy
+#### 3. Matplotlib
+#### 4. Seaborn
 
-<b>Here are some of the library to use for web scrapping:</b><br>
-
-#### 1. Beautiful Soup
-
-#### 2. UrlLib
+### Learning 7: Library File Management
+**Branch:** 12_6_libFileManagement<br>
+#### 1. OS
+#### 2. JSON
+#### 3. Pickle
