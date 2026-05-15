@@ -313,3 +313,12 @@ if args.output:
         ![Alt Text](12_library/12_4_libraryParser/readme_image/libParser-help.png)
     </li>
 </ul>
+
+### Learning 7: Library Web Scrapping
+A library that helps users / devs to gather data from a web page.  This process is called "Web Scrapping" or "Web Crawling".  You can try this functions & methods in this library to extract information from a website and save it on a format that could be access and use for analysis or another apps.<br>
+
+<b>Here are some of the library to use for web scrapping:</b><br>
+
+#### 1. Beautiful Soup
+
+#### 2. UrlLib
