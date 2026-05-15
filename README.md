@@ -257,3 +257,59 @@ Output: Shows an error on self.assertTrue _after change from assertFalse into as
 <b>Branch: </b>12_3_libraryMatematika Branch<br>
 <p>A Python's math library that explain each math's method with examples on how to count the equations according with.  From the docs file on [Python Math Docs](https://docs.python.org/3/library/math.html), the explanations ain't detailed, so I've created a self directory located in '12_library/12_3_libraryMatematika/math.ipynb', a python in jupyter format.</p><br>
 <p>From this jupyter notebook, I'm not only explaining how to do it, because through this documentation, I'm also learning each of these python's math libraries.</p>
+
+### Learning 5: Library Parser
+<b>Branch: </b>12_4_libraryParser<br>
+<p>A library parser from Python that provide developers to manage python code into a processable data structure and easier to analyze.  We also can use [GetOpt](https://docs.python.org/3.8/library/getopt.html) or [ArgParse](https://docs.python.org/3.8/library/argparse.html).</p>
+<p>Argument Parser is perfect for those who want to create a short script program that could recieve parameters directly as the program runs.  This is usually used when calling the application or CLI / terminal *nix-based script, for instance Linux or MacOS.  One of the command examples as shown here:</p>
+
+#### Practice 1: A simple --output add_argument
+
+```
+python libParser.py -o
+```
+An Example of adding optional argument using ArgParse is like here below:
+```
+import argparse
+ 
+parser = argparse.ArgumentParser()
+parser.add_argument('-o', '--output', action='store_true', help="tampilkan output")
+args = parser.parse_args()
+ 
+if args.output:
+   print("Halo, ini merupakan sebuah output dari panggildicoding.py")
+```
+<p><i>You can access this code above on 12_library/12_4_libraryParser/libParser.py, and do a git clone before playing with this code.</i></p><br>
+<p><b>Play-Along by Run the Code Above</b></p>
+<ul>
+    <li>
+        On the libParser.py, it can recieve the parameter by type-in the -o or --output on the VSCode Terminal:<br>
+        ```
+        python libParser.py -o
+        ```<br>
+        ```
+        python libParser.py --output
+        ```<br>
+        From the command-line above, you'll recieve an output says:<br>
+        'Halo, ini merupakan sebuah output dari panggildicoding.py'
+    </li>
+    <li>
+        Try to input without any -o, --output like this:<br>
+        ```
+        python libParser.py
+        ```
+        It won't show anything in the VSCode Terminal, <i>eventhough it doesn't show any errors</i>
+    </li>
+    <li>
+        <p>When we call -h or --help:</p><br>
+        ```
+        python libParser.py -h
+        ```
+        <p>or</p>
+        ```
+        python libParser.py --help
+        ```<br>
+        <p>It will show the help log details in the VSCode Terminal:</p><br>
+        ![Alt Text](12_library/12_4_libraryParser/readme_image/libParser-help.png)
+    </li>
+</ul>
