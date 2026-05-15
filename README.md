@@ -313,3 +313,10 @@ if args.output:
         ![Alt Text](12_library/12_4_libraryParser/readme_image/libParser-help.png)
     </li>
 </ul>
+
+### Learning 6: Library Data Processing
+**Branch:** 12_5_libPengolahanData<br>
+#### 1. Pandas
+#### 2. NumPy
+#### 3. Matplotlib
+#### 4. Seaborn
